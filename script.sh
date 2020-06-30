@@ -67,6 +67,8 @@ sudo mv arduino* /opt
 sudo bash /opt/arduino*/install.sh
 #Insomnia
 sudo apt-get install insomnia
+#Geany
+flatpak install flathub org.geany.Geany
 
 #ZSH
 sudo aptitude install zsh
