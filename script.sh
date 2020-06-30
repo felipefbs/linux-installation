@@ -1,6 +1,13 @@
 #Numix incon theme circle PPA
 sudo add-apt-repository ppa:numix/ppa
+
+#Insomnia 
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
+
+# Ulauncher 
 sudo add-apt-repository ppa:agornostal/ulauncher
+
 
 sudo aptitude update
 sudo aptitude upgrade -y
@@ -15,21 +22,21 @@ sudo apt install snapd -y
 
 #Google Chrome
 #Discord
-sudo snap install discord
+flatpak install flathub com.discordapp.Discord
 #Spotify
-sudo snap install spotify
+flatpak install flathub com.spotify.Client
 #VLC
-sudo snap install vlc
+flatpak install flathub org.videolan.VLC
 #Slack
-sudo snap install slack --classic
+flatpak install flathub com.slack.Slack
 #Zoom
-sudo snap install zoom-client
+flatpak install flathub us.zoom.Zoom
 #Plank
 sudo aptitude install plank
 #ulauncher
 sudo aptitude install ulauncher
 #OBS Studio
-sudo snap install obs-studio
+flatpak install flathub com.obsproject.Studio
 
 
 #Numix Icon Theme
@@ -50,16 +57,13 @@ sudo sh goInstalation.sh
 
 
 #VS Code
-sudo snap install code --classic
+flatpak install flathub com.visualstudio.code
 #Arduino
-sudo wget https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz -O arduino.tar.xz
-tar xf arduino.tar.xz
-sudo rm arduino.tar.xz
-
-sudo mv arduino* /opt
-sudo bash /opt/arduino*/install.sh
+flatpak install flathub cc.arduino.arduinoide
 #Insomnia
-sudo snap install insomnia
+sudo apt-get install insomnia
+#Geany
+flatpak install flathub org.geany.Geany
 
 #ZSH
 sudo aptitude install zsh
