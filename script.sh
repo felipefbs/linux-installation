@@ -59,12 +59,7 @@ sudo sh goInstalation.sh
 #VS Code
 flatpak install flathub com.visualstudio.code
 #Arduino
-sudo wget https://downloads.arduino.cc/arduino-1.8.12-linux64.tar.xz -O arduino.tar.xz
-tar xf arduino.tar.xz
-sudo rm arduino.tar.xz
-
-sudo mv arduino* /opt
-sudo bash /opt/arduino*/install.sh
+flatpak install flathub cc.arduino.arduinoide
 #Insomnia
 sudo apt-get install insomnia
 #Geany
