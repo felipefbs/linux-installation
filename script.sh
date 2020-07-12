@@ -12,35 +12,20 @@ sudo add-apt-repository ppa:agornostal/ulauncher
 sudo aptitude update
 sudo aptitude upgrade -y
 
-#Nvidia drivers
+sudo aptitude install git \                         #Git
+                      plank \                       #Plank Dock
+                      ulauncher \                   #Ulaucher
+                      numix-icon-theme-circle \     #Numix Circle Icon Theme
+                      insomnia                      #Insomnia
 
-#Git
-sudo aptitude install git
+flatpak install flathub com.discordapp.Discord \    #Discord
+                        com.spotify.Client \        #Spotify
+                        org.videolan.VLC \          #VLC
+                        com.slack.Slack \           #Slack
+                        us.zoom.Zoom \              #Zoom
+                        com.obsproject.Studio \     #OBS
+                        cc.arduino.arduinoide \     #Arduino IDE
 
-#Snap
-sudo apt install snapd -y
-
-#Google Chrome
-#Discord
-flatpak install flathub com.discordapp.Discord
-#Spotify
-flatpak install flathub com.spotify.Client
-#VLC
-flatpak install flathub org.videolan.VLC
-#Slack
-flatpak install flathub com.slack.Slack
-#Zoom
-flatpak install flathub us.zoom.Zoom
-#Plank
-sudo aptitude install plank
-#ulauncher
-sudo aptitude install ulauncher
-#OBS Studio
-flatpak install flathub com.obsproject.Studio
-
-
-#Numix Icon Theme
-sudo aptitude install numix-icon-theme-circle
 #Nord Theme
 git clone https://github.com/EliverLara/Nordic.git
 mv $HOME/.themes/Nordic-master $HOME/.themes/Nordic
@@ -48,22 +33,9 @@ mv $HOME/.themes/Nordic-master $HOME/.themes/Nordic
 git clone https://github.com/arcticicestudio/nord-gnome-terminal.git
 cd nord-gnome-terminal/src
 ./nord.sh
-#Capitaine Cursor Light
 
-
-#Golang
 wget https://gist.githubusercontent.com/felipefbs/9c60fa741942807976d5164299efa0ee/raw/0b50a91018ae860b24dcdedf18844aed35bfd798/goInstalation.sh
 sudo sh goInstalation.sh
-
-
-#VS Code
-flatpak install flathub com.visualstudio.code
-#Arduino
-flatpak install flathub cc.arduino.arduinoide
-#Insomnia
-sudo apt-get install insomnia
-#Geany
-flatpak install flathub org.geany.Geany
 
 #ZSH
 sudo aptitude install zsh
@@ -72,6 +44,3 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
-#baixar o .zshrc
-#baixar o bttv backup
