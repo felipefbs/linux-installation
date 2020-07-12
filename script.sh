@@ -15,7 +15,8 @@ sudo aptitude install -y git \
                          plank \
                          ulauncher \
                          numix-icon-theme-circle \
-                         insomnia
+                         insomnia \
+                         zsh
 
 flatpak install flathub com.discordapp.Discord \
                         com.spotify.Client \
@@ -36,8 +37,6 @@ fi
 wget https://gist.githubusercontent.com/felipefbs/9c60fa741942807976d5164299efa0ee/raw/0b50a91018ae860b24dcdedf18844aed35bfd798/goInstalation.sh
 sudo sh goInstalation.sh
 
-#ZSH
-sudo aptitude install zsh
 #Oh My zsh!
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
