@@ -25,13 +25,13 @@ flatpak install flathub com.discordapp.Discord \
                         com.obsproject.Studio \
                         cc.arduino.arduinoide
 
-#Nord Theme
-git clone https://github.com/EliverLara/Nordic.git
-mv $HOME/.themes/Nordic-master $HOME/.themes/Nordic
-#Nord Gnome Terminal
-git clone https://github.com/arcticicestudio/nord-gnome-terminal.git
-cd nord-gnome-terminal/src
-./nord.sh
+THEMES="$HOME/.themes/"
+if [ -d "$THEMES" ]; then
+    git clone https://github.com/EliverLara/Nordic.git $HOME/.themes/Nordic
+else
+    mkdir $HOME/.themes/
+    git clone https://github.com/EliverLara/Nordic.git $HOME/.themes/Nordic
+fi
 
 wget https://gist.githubusercontent.com/felipefbs/9c60fa741942807976d5164299efa0ee/raw/0b50a91018ae860b24dcdedf18844aed35bfd798/goInstalation.sh
 sudo sh goInstalation.sh
