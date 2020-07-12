@@ -24,7 +24,7 @@ echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" | sudo tee -a /etc/apt/
 wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-key add -
 
 ## Ulauncher
-sudo add-apt-repository ppa:agornostal/ulauncher
+sudo add-apt-repository -y ppa:agornostal/ulauncher
 
 # Updating repositories and upgrading packages
 sudo aptitude update && sudo aptitude upgrade -y
