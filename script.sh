@@ -1,3 +1,6 @@
+mkdir $HOME/Downloads/linux-installation
+cd $HOME/Downloads/linux-installation
+
 # Additional repositories
 ## Numix incon theme circle PPA
 sudo add-apt-repository -y ppa:numix/ppa
