@@ -22,7 +22,11 @@ sudo aptitude install -y git \
                          ulauncher \
                          numix-icon-theme-circle \
                          insomnia \
-                         zsh
+                         zsh \
+                         texlive-full \
+                         htop \
+                         psensor \
+                         putty
 
 ## flatpak packages
 flatpak install flathub com.discordapp.Discord \
