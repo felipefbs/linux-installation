@@ -8,23 +8,22 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 # Ulauncher 
 sudo add-apt-repository ppa:agornostal/ulauncher
 
-
 sudo aptitude update
 sudo aptitude upgrade -y
 
-sudo aptitude install git \                         #Git
-                      plank \                       #Plank Dock
-                      ulauncher \                   #Ulaucher
-                      numix-icon-theme-circle \     #Numix Circle Icon Theme
-                      insomnia                      #Insomnia
+sudo aptitude install -y git \
+                         plank \
+                         ulauncher \
+                         numix-icon-theme-circle \
+                         insomnia
 
-flatpak install flathub com.discordapp.Discord \    #Discord
-                        com.spotify.Client \        #Spotify
-                        org.videolan.VLC \          #VLC
-                        com.slack.Slack \           #Slack
-                        us.zoom.Zoom \              #Zoom
-                        com.obsproject.Studio \     #OBS
-                        cc.arduino.arduinoide \     #Arduino IDE
+flatpak install flathub com.discordapp.Discord \
+                        com.spotify.Client \
+                        org.videolan.VLC \
+                        com.slack.Slack \
+                        us.zoom.Zoom \
+                        com.obsproject.Studio \
+                        cc.arduino.arduinoide
 
 #Nord Theme
 git clone https://github.com/EliverLara/Nordic.git
