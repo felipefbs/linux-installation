@@ -42,10 +42,6 @@ else
     git clone https://github.com/EliverLara/Nordic.git $HOME/.themes/Nordic
 fi
 
-## My shell script to install Golang
-wget https://gist.githubusercontent.com/felipefbs/9c60fa741942807976d5164299efa0ee/raw/0b50a91018ae860b24dcdedf18844aed35bfd798/goInstalation.sh
-sudo sh goInstalation.sh
-
 ## Oh My zsh! Framework
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
