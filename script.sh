@@ -43,7 +43,8 @@ sudo aptitude install -y git \
                          putty \
                          code \
                          brave-browser \
-                         google-chrome-stable
+                         google-chrome-stable \
+                         geany
 
 ## flatpak packages
 flatpak install flathub com.discordapp.Discord \
