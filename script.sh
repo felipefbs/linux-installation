@@ -45,7 +45,8 @@ sudo apt-get install -y git \
                          brave-browser \
                          google-chrome-stable \
                          geany \
-                         steam
+                         steam \
+                         virtualbox
 
 ## flatpak packages
 flatpak install flathub com.discordapp.Discord \

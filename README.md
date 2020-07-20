@@ -28,6 +28,7 @@ Software list:
 - [Arduino IDE](https://www.arduino.cc/en/main/software)
 - [Ulauncher](https://ulauncher.io/)
 - [TexLive](https://www.tug.org/texlive/)
+- [Virtual Box](https://www.virtualbox.org/)
 
 Theme:
 
