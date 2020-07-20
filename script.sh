@@ -9,7 +9,7 @@ sudo add-apt-repository -y ppa:numix/ppa
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -o root -g root -m 644 packages.microsoft.gpg /etc/apt/trusted.gpg.d/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/trusted.gpg.d/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-aptitude install apt-transport-https
+apt-get install apt-transport-https
 
 ## Google Chrome repository
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
@@ -27,11 +27,11 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 sudo add-apt-repository -y ppa:agornostal/ulauncher
 
 # Updating repositories and upgrading packages
-sudo aptitude update && sudo aptitude upgrade -y
+sudo apt-get update && sudo apt-get upgrade -y
 
 # Installing packages
-## aptitude packages
-sudo aptitude install -y git \
+## apt-get packages
+sudo apt-get install -y git \
                          plank \
                          ulauncher \
                          numix-icon-theme-circle \
