@@ -39,6 +39,9 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm install --lts
 
+# Yarn
+sudo apt-get install --no-install-recommends yarn -y
+
 ## apt-get packages
 sudo apt-get install -y git \
                          plank \
