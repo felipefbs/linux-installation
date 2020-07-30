@@ -44,21 +44,22 @@ sudo apt-get install --no-install-recommends yarn -y
 
 ## apt-get packages
 sudo apt-get install -y git \
-                         plank \
-                         ulauncher \
-                         numix-icon-theme-circle \
-                         insomnia \
-                         zsh \
-                         texlive-full \
-                         htop \
-                         psensor \
-                         putty \
-                         code \
-                         brave-browser \
-                         google-chrome-stable \
-                         geany \
-                         steam \
-                         virtualbox
+                        plank \
+                        ulauncher \
+                        numix-icon-theme-circle \
+                        insomnia \
+                        zsh \
+                        texlive-full \
+                        htop \
+                        psensor \
+                        putty \
+                        code \
+                        brave-browser \
+                        google-chrome-stable \
+                        geany \
+                        steam \
+                        virtualbox \
+                        piper
 
 ## flatpak packages
 flatpak install flathub com.discordapp.Discord \
