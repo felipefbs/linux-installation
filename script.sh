@@ -67,7 +67,7 @@ flatpak install flathub com.discordapp.Discord \
                         com.slack.Slack \
                         us.zoom.Zoom \
                         com.obsproject.Studio \
-                        cc.arduino.arduinoide
+                        cc.arduino.arduinoide -y
 
 ## Nordic theme :purple_heart:
 THEMES="$HOME/.themes/"
