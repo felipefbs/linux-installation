@@ -30,6 +30,15 @@ sudo add-apt-repository -y ppa:agornostal/ulauncher
 sudo apt-get update && sudo apt-get upgrade -y
 
 # Installing packages
+
+# NVM
+curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+nvm install --lts
+
 ## apt-get packages
 sudo apt-get install -y git \
                          plank \
