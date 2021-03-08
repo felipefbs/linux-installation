@@ -78,6 +78,10 @@ flatpak install flathub com.discordapp.Discord \
                         com.obsproject.Studio \
                         cc.arduino.arduinoide -y
 
+## Python3 packages
+python3 -m pip install scons
+
+
 ## Nordic theme :purple_heart:
 THEMES="$HOME/.themes/"
 if [ -d "$THEMES" ]; then
