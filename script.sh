@@ -26,8 +26,14 @@ wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc | sudo apt-ke
 ## Ulauncher
 sudo add-apt-repository -y ppa:agornostal/ulauncher
 
+## GH
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+sudo apt-add-repository https://cli.github.com/packages
+
+
 # Updating repositories and upgrading packages
-sudo apt-get update && sudo apt-get upgrade -y
+sudo apt-get update
+sudo apt-get upgrade -y
 
 # Installing packages
 
@@ -59,7 +65,8 @@ sudo apt-get install -y git \
                         geany \
                         steam \
                         virtualbox \
-                        piper
+                        piper \
+                        gh
 
 ## flatpak packages
 flatpak install flathub com.discordapp.Discord \
