@@ -66,7 +66,8 @@ sudo apt-get install -y git \
                         steam \
                         virtualbox \
                         piper \
-                        gh
+                        gh \
+                        python3-pip
 
 ## flatpak packages
 flatpak install flathub com.discordapp.Discord \
